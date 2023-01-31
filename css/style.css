@@ -1,0 +1,328 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+.head-section{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+.nav-list{
+	top:76%;
+	right: 2%;
+	padding: 20px;
+	background-color: #212529;
+	border-radius: 6px;
+	display: none;
+	flex-direction: column;
+}
+.nav-list a{
+	color: #ffb100;
+	font-weight: bold;
+	padding: 6px !important;
+}
+#close{
+	background-color: transparent;
+	border: none;
+}
+.close{
+	top:77%;
+	right:0%;
+	display: none;
+}
+.close i{
+	color: white !important;
+}
+.header{
+	width: 80%;
+	margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar i{
+	color: #212529;
+	margin: 20px;
+	font-size: 25px;
+}
+.home{
+	height:100vh;
+	background:url(https://img.freepik.com/free-vector/flat-geometric-background_23-2148974368.jpg?w=740&t=st=1668071317~exp=1668071917~hmac=21b336a16d5aaa0089bf366accf1bd5367f78bf8cd615f78cc1c972fd8147dd1);
+	background-size:100%;
+}
+.home-content{
+	width:100%;
+	height:100%;
+	flex-direction:column;
+}
+.home-content h1{
+	font-size:60px;
+	color:#ffb100;
+}
+.about-img img{
+	width:100%;
+	z-index:1;
+}
+.about-content p{
+	font-size:20px;
+}
+.about-icon i{
+    color:#ffb100;
+	font-size:20px;
+}
+.about-image{
+	position:relative;
+}
+.about-heading h1{
+	color:#ffb100;
+}
+.about-info i{
+	color:#ffb100;
+	font-size:25px;
+}
+.about-info p{
+	background-color:#faf7f8;
+	border-radius:10px;
+	font-size:23px;
+}
+.about-image::before{
+	content: "";
+    top: -27px;
+    left: -40px;
+    width: 285px;
+    height: 110%;
+    position: absolute;
+    border: 5px solid #ffb100;
+    z-index: -1;
+    background-color: #ffb100;
+}
+.button a{
+	padding: 10px 20px;
+	border: 3px solid #ffb100;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	font-weight: bold;
+}
+.button a:hover{
+	background-color: #ffc23a;
+	color: white !important;
+}
+.button{
+	padding-top: 50px;
+}
+#name{
+	width:49%;
+	height:40px;
+	padding:10px;
+	border-radius:5px;
+	border:1px solid grey
+}
+#email{
+	width:49%;
+	height:40px;
+	float:right;
+	padding:10px;
+	border-radius:5px;
+	border:1px solid grey
+}
+#subject{
+	width:100%;
+	height:40px;
+	margin-top:20px;
+	padding:10px;
+	border-radius:5px;
+	border:1px solid grey
+}
+#msg{
+	width:100%;
+	margin-top:20px;
+	padding:10px;
+	border-radius:5px;
+	border:1px solid grey
+}
+.work-heading h1{
+	color:#ffb100;
+}
+.course-heading h1{
+	color:#ffb100;
+}
+
+h1{
+	padding: 20px 0px;
+}
+.course-para{
+	background-color: #687683;
+}
+.course-info i{
+	color:#ffb100;
+	font-size:25px;
+}
+.course-info p{
+	background-color:#faf7f8a6;
+	border-radius:10px;
+	font-size:21px;
+}
+
+
+.skill-heading h1{
+	color:#ffb100;
+}
+
+.percentage progress{
+	width:100%;
+	border-radius:0;
+}
+.portfolio-image img{
+	width:100%;
+}
+.skill-image img{
+	width:100%;
+	height:100%;
+}
+.education-img img{
+	width:100%;
+}
+.study{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.social-icon{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	font-size:18px;
+	border:1px solid grey;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	transition:all 0.5s linear;
+	color:#687683;
+}
+.social-icon:hover{
+	background-color:#ffb727;
+	color:white;
+}
+.html-circle{
+	stroke-dasharray:280;
+}
+.css-circle{
+	stroke-dasharray:280;
+}
+.js-circle{
+	stroke-dasharray:220;
+}
+.bs-circle{
+	stroke-dasharray:189;
+}
+.git-circle{
+	stroke-dasharray:267;
+}
+.react-circle{
+	stroke-dasharray:236;
+}
+.svg-cir{
+	transform:rotate(260deg);
+}
+
+.owl-dot span{
+	width:12px !important;
+	height:12px !important;
+	margin:5px !important;
+}
+.active span{
+	background-color:#ffb100 !important;
+}
+
+.work-image{
+	position:relative;
+}
+.work-hover{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	z-index:1;
+	opacity:0;
+	transition:all 0.7s linear;
+}
+.work-color{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:linear-gradient(#121212b0,#121212b0);
+	opacity:0;
+	transition:all 0.7s linear;
+}
+.work-image:hover .work-hover{
+	opacity:1;
+}
+.work-image:hover .work-color{
+	opacity:1;
+}
+.work-hover h4{
+	padding:10px 0px;
+}
+.work-hover a{
+	color:white;
+	font-size:25px;
+}
+.work-hover a:hover{
+	color:#ffb100 ;
+}
+.contact-icon{
+	width:50px;
+	height:50px;
+	font-size:20px;
+	border-radius:50%;
+	background-color:#fff6e4;
+	color:#ffb727;
+	border:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.contact-right a{
+	text-decoration:none;
+	color:black;
+}.contact-heading h1{
+	color:#ffb100;
+}
+.eduaction-heading{
+	color:#ffb100;
+}
+.address{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon a{
+	color: #687683;
+	transition: all 0.5s linear;
+}
+.social-icon a:hover{
+	color: white;
+}
+.contact-link{
+	transition: all 0.5s linear;
+}
+.contact-link:hover{
+	color: #ffb100;
+	text-decoration: underline;
+}
+a{
+	cursor: pointer;
+}
